@@ -2,7 +2,7 @@ package internal
 
 import (
 	"github.com/golang/protobuf/ptypes"
-	"github.com/mongodb/ftdc/events"
+	"github.com/deciduosity/ftdc/events"
 )
 
 func (m *EventMetrics) Export() *events.Performance {

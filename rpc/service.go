@@ -1,8 +1,8 @@
 package rpc
 
 import (
-	"github.com/evergreen-ci/poplar"
-	"github.com/evergreen-ci/poplar/rpc/internal"
+	"github.com/deciduosity/poplar"
+	"github.com/deciduosity/poplar/rpc/internal"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 )

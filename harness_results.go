@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mongodb/grip/message"
+	"github.com/deciduosity/grip/message"
 )
 
 // BenchmarkResult contains data about the run of a specific test. The

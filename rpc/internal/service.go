@@ -1,7 +1,7 @@
 package internal
 
 import (
-	"github.com/evergreen-ci/poplar"
+	"github.com/deciduosity/poplar"
 	"google.golang.org/grpc"
 )
 

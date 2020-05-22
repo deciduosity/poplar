@@ -10,7 +10,7 @@
 // interacts with cedars RPC protocol.
 //
 // Additionally, poplar defines some-local only RPC interfaces on top
-// of the github.com/mongodb/ftdc and github.com/mongodb/ftdc/events
+// of the github.com/deciduosity/ftdc and github.com/mongodb/ftdc/events
 // packages to support generating data payloads in real time.
 //
 //

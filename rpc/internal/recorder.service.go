@@ -3,7 +3,7 @@ package internal
 import (
 	"context"
 
-	"github.com/evergreen-ci/poplar"
+	"github.com/deciduosity/poplar"
 	"github.com/golang/protobuf/ptypes"
 	"github.com/pkg/errors"
 )

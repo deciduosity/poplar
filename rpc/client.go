@@ -5,12 +5,12 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/evergreen-ci/poplar"
-	"github.com/evergreen-ci/poplar/rpc/internal"
-	"github.com/mongodb/amboy"
-	"github.com/mongodb/amboy/queue"
-	"github.com/mongodb/grip"
-	"github.com/mongodb/grip/message"
+	"github.com/deciduosity/poplar"
+	"github.com/deciduosity/poplar/rpc/internal"
+	"github.com/deciduosity/amboy"
+	"github.com/deciduosity/amboy/queue"
+	"github.com/deciduosity/grip"
+	"github.com/deciduosity/grip/message"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 )

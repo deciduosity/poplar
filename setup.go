@@ -8,7 +8,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/evergreen-ci/aviation/services"
+	"github.com/deciduosity/aviation/services"
 	"github.com/pkg/errors"
 	"go.mongodb.org/mongo-driver/bson"
 	"google.golang.org/grpc"

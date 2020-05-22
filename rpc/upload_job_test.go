@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/evergreen-ci/pail"
-	"github.com/evergreen-ci/poplar"
-	"github.com/evergreen-ci/utility"
+	"github.com/deciduosity/pail"
+	"github.com/deciduosity/poplar"
+	"github.com/deciduosity/utility"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -1,6 +1,6 @@
 package internal
 
-import "github.com/evergreen-ci/poplar"
+import "github.com/deciduosity/poplar"
 
 func (rt CreateOptions_RecorderType) Export() poplar.RecorderType {
 	switch rt {

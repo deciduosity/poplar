@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mongodb/ftdc/events"
-	"github.com/mongodb/grip"
+	"github.com/deciduosity/ftdc/events"
+	"github.com/deciduosity/grip"
 	"github.com/pkg/errors"
 )
 

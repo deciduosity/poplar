@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/evergreen-ci/pail"
-	"github.com/evergreen-ci/utility"
-	"github.com/mongodb/ftdc"
+	"github.com/deciduosity/pail"
+	"github.com/deciduosity/utility"
+	"github.com/deciduosity/ftdc"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

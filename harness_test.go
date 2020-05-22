@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mongodb/ftdc"
-	"github.com/mongodb/ftdc/events"
+	"github.com/deciduosity/ftdc"
+	"github.com/deciduosity/ftdc/events"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

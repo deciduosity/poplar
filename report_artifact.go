@@ -8,12 +8,12 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/evergreen-ci/birch"
-	"github.com/evergreen-ci/pail"
-	"github.com/evergreen-ci/utility"
-	"github.com/mongodb/ftdc"
-	"github.com/mongodb/ftdc/metrics"
-	"github.com/mongodb/grip"
+	"github.com/deciduosity/birch"
+	"github.com/deciduosity/pail"
+	"github.com/deciduosity/utility"
+	"github.com/deciduosity/ftdc"
+	"github.com/deciduosity/ftdc/metrics"
+	"github.com/deciduosity/grip"
 	"github.com/pkg/errors"
 )
 

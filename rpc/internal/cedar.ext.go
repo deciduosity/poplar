@@ -3,7 +3,7 @@ package internal
 import (
 	"time"
 
-	"github.com/evergreen-ci/poplar"
+	"github.com/deciduosity/poplar"
 	"github.com/golang/protobuf/ptypes"
 	timestamp "github.com/golang/protobuf/ptypes/timestamp"
 	"github.com/pkg/errors"
