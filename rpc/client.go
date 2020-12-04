@@ -53,24 +53,21 @@ func (opts *UploadReportOptions) convertAndUploadArtifacts(ctx context.Context) 
 		}
 
 		for i := range test.Artifacts {
-			var err error
-
-			if err = test.Artifacts[i].Convert(ctx); err != nil {
+			if err := test.Artifacts[i].Convert(ctx); err != nil {
 				return errors.Wrap(err, "problem converting artifact")
 			}
 
-			err = test.Artifacts[i].SetBucketInfo(opts.Report.BucketConf)
-			if err != nil {
+			if err := test.Artifacts[i].SetBucketInfo(opts.Report.BucketConf); err != nil {
 				return errors.Wrap(err, "problem setting bucket info")
 			}
 
 			job := NewUploadJob(test.Artifacts[i], opts.Report.BucketConf, opts.DryRun)
 			if opts.SerializeUpload {
 				job.Run(ctx)
-				if err = job.Error(); err != nil {
+				if err := job.Error(); err != nil {
 					return errors.Wrap(err, "problem converting and uploading artifacts")
 				}
-			} else if err = jobQueue.Put(ctx, job); err != nil {
+			} else if err := jobQueue.Put(ctx, job); err != nil {
 				return errors.Wrap(err, "problem adding artifact job to upload queue")
 			}
 		}
