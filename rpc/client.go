@@ -5,12 +5,12 @@ import (
 	"runtime"
 	"time"
 
+	"github.com/cdr/amboy"
+	"github.com/cdr/amboy/queue"
+	"github.com/cdr/grip"
+	"github.com/cdr/grip/message"
 	"github.com/deciduosity/poplar"
 	"github.com/deciduosity/poplar/rpc/internal"
-	"github.com/deciduosity/amboy"
-	"github.com/deciduosity/amboy/queue"
-	"github.com/deciduosity/grip"
-	"github.com/deciduosity/grip/message"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 )
@@ -85,7 +85,10 @@ func (opts *UploadReportOptions) convertAndUploadArtifacts(ctx context.Context) 
 	}
 
 	catcher := grip.NewBasicCatcher()
-	for job := range jobQueue.Results(ctx) {
+	for job := range jobQueue.Jobs(ctx) {
+		if !job.Status().Completed {
+			continue
+		}
 		catcher.Add(job.Error())
 	}
 

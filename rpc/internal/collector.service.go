@@ -5,9 +5,9 @@ import (
 	"io"
 
 	"github.com/deciduosity/poplar"
-	"github.com/deciduosity/ftdc/events"
-	"github.com/deciduosity/grip"
-	"github.com/deciduosity/grip/message"
+	"github.com/deciduosity/birch/ftdc/events"
+	"github.com/cdr/grip"
+	"github.com/cdr/grip/message"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

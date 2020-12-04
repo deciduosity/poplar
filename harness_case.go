@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/deciduosity/ftdc/events"
-	"github.com/deciduosity/grip"
+	"github.com/deciduosity/birch/ftdc/events"
+	"github.com/cdr/grip"
 	"github.com/pkg/errors"
 )
 

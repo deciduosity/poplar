@@ -11,9 +11,9 @@ import (
 	"github.com/deciduosity/birch"
 	"github.com/deciduosity/pail"
 	"github.com/deciduosity/utility"
-	"github.com/deciduosity/ftdc"
-	"github.com/deciduosity/ftdc/metrics"
-	"github.com/deciduosity/grip"
+	"github.com/deciduosity/birch/ftdc"
+	"github.com/deciduosity/birch/ftdc/metrics"
+	"github.com/cdr/grip"
 	"github.com/pkg/errors"
 )
 

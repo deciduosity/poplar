@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/deciduosity/grip/message"
+	"github.com/cdr/grip/message"
 )
 
 // BenchmarkResult contains data about the run of a specific test. The
